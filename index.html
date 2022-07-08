@@ -41,7 +41,7 @@
          </nav>
     </div>
     <div class="hero">
-        <video controls autoplay loop plays-inline class="bg-video">
+        <video class="bg-video" id="autoplay" loop autoplay>
             <source src="./4K Relaxing Nature Sounds - Short Video Clips of Nature.mp4" type="video/mp4">
         </video>
         <div class="containter content text-center">
@@ -49,5 +49,10 @@
             <a href="#">explore</a>
         </div>
     </div>
+    <script>
+        window.onload = function(){
+            document.getElementById('autoplay').setAttribute('autoplay','autoplay')
+        }
+    </script>
 </body>
 </html>
